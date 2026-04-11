@@ -1,0 +1,72 @@
+:root {
+    --green-primary: #1F6B4E;
+    --green-light: #EDF6F2;
+    --green-accent: #7BC8A4;
+    --orange-cta: #E28F2D;
+    --text-dark: #1E1E1E;
+    --text-gray: #4A4A4A;
+    --neutral-bg: #F8FBF9;
+    --white: #FFFFFF;
+}
+.hero-nutrition{
+    background: url("../image/banner-bio.jfif");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70vh;
+    position: relative;
+}
+.card-grid{
+    display: flex;
+    gap: 30px;
+    margin: 70px auto;
+    align-items: center;
+}
+.card-biodiversite{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+.card-biodiversite h3{
+    margin: 50px 0;
+    font-size: 25px;
+    font-weight: 800;
+}
+.card-biodiversite p{
+    color: gray;
+}
+.card-biodiversite strong{
+    color: orangered;
+    font-weight: 800;
+    font-size: 30px;
+}
+.card-biodiversite img{
+    width: 450px;
+    border: 7px solid var(--green-primary);
+    height: 450px;
+    border-radius: 50%;
+}
+@media (max-width:1500px) {
+    .card-grid{
+        flex-direction: column;
+        gap: 150px;
+    }
+}
+@media (max-width:768px) {
+
+    .table{
+        overflow: auto;
+        width: 100%;
+        scrollbar-color: rgba(255, 253, 253, 0.514) transparent;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width:476px) {
+    .card-biodiversite img{
+        width: 250px;
+        border: 1px solid var(--green-primary);
+        height: 250px;
+    }
+}

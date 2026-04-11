@@ -1,0 +1,170 @@
+.disease-grid{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3,1fr);
+}
+.card-disease{
+    cursor: pointer;
+    background: white;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.247);
+    border-radius: 15px;
+    position: absolute;
+    inset: 0;
+    overflow-y: auto;
+    transform: scale(1);
+    scrollbar-color: rgba(0, 128, 0, 0.514) transparent;
+    backface-visibility: hidden;
+    z-index: 10;
+}
+.absolute{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.card-text{
+    color: #c5ffe5;
+    text-shadow: 0 10px 6px black;
+}
+.px{
+    padding:10px 25px;
+}
+.agent{
+    border: 2px solid var(--green-accent);
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.agent .icon{
+    padding: 5px;
+    border-radius: 50px;
+    background: #1F6B4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 75px;
+}
+.agent svg,.disease svg{
+    width: 50px;
+}
+.disease svg{
+    width: 50px;
+    height: 50px;
+}
+.agent h3{
+    color: #1F6B4E;
+}
+.absolute::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.158);
+}
+.absolute-element{
+    z-index: 10;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.absolute img{
+    width: 100%;
+}
+h3{
+    color: white;
+}
+.absolute .statut{
+    position: absolute;
+    z-index: 10;
+    top: 15px;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    right: 15px;
+}
+.statut.eleve{
+    background: rgb(255, 81, 0);
+}
+.flip-card {
+  perspective: 1000px;
+  position: relative;
+}
+
+.snail-flip {
+    height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.snail-flip.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-disease.back {
+  transform: rotateY(180deg);
+}
+
+svg{
+    width: 24px;
+}
+.back{
+    overflow-y: auto;
+    scrollbar-color: #77daac transparent;
+    transform: rotateY(180deg);
+    padding: 30px 20px;
+    background: linear-gradient(45deg,var(--green-primary),var(--green-accent));
+}
+.back-card{
+    background: #feffff4d;
+    border: 1px solid rgba(255, 255, 255, 0.226);
+    border-radius: 20px;
+    padding: 20px 0;
+    min-height: 150px;
+}
+.pl{
+    padding-left: 30px;
+}
+.icon svg{
+    width: 34px;
+    height: 24px;
+}
+.traitement{
+    background: #059960bb;
+    
+}
+.prevention{
+    background: rgba(0, 162, 255, 0.39);
+}
+.espece{
+    background: rgba(255, 68, 0, 0.226);
+}
+.espece-liste li{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.24);
+    margin: 10px 0;
+    border-radius: 15px;
+}
+@media (max-width:992px) {
+    .disease-grid{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+
+}
+/* @media (min-width:768px) {
+    .card-disease:hover{
+    transform: rotate(3deg) scale(1.2);
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.644);
+    
+}
+} */
+
+@media (max-width:1192px) {
+        .disease-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

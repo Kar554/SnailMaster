@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snailmaster - site</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+</head>
+<body>
+<header>
+    <div class="header-flex">
+    <div class="logo d-flex gap-2">
+        <a class="navbar-brand" href="index.html">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M29.6 42.8S24.9 22 16.5 22C1.4 22 1 49.8 11.2 59c3.1 2.8 16.1 2.8 43.5 0c2.9-.3 1.8-3.1-2.3-5c-2.7-1.3-15.8-3.7-22.8-11.2" fill="#386f01"> </path> <g fill="#769e2a"> <ellipse cx="27.8" cy="39.8" rx="3.9" ry="6.7"> </ellipse> <ellipse cx="31.5" cy="53.4" rx="2.4" ry="2.7"> </ellipse> <ellipse cx="22.5" cy="48.5" rx="1.8" ry="3.1"> </ellipse> <ellipse cx="20.2" cy="36.4" rx="1.4" ry="2.1"> </ellipse> </g> <path d="M9.6 26.1c0 1.2.4 2.3 1.1 2.9c.3.3.7.5 1.1.7c.2.1.4.1.6.1h.7c.9 0 1.8-.3 2.5-.9c.7-.6 1.2-1.6 1.6-2.8c.4 1.2.4 2.6-.4 3.8c-.8 1.2-2.3 1.9-3.7 1.9h-.5c-.2 0-.3 0-.5-.1c-.4-.1-.7-.2-1.1-.3c-.7-.3-1.3-.8-1.6-1.5c-.7-1.2-.6-2.8.2-3.8" fill="#2c2e30"> </path> <path d="M58.9 42.3c3.4-4.3 3.9-11.2 2-15.4c-2.8-6.2-8.3-7.1-8.3-7.1c-7.4-11.9-27.8-11.9-34 2.7c5.3 3.1 8.3 11.8 10 16.5c1.6 6.3 4.7 12 9.8 13.5c2.2.6 2.6-1.7 2.6-1.7c1.4 2 4.3 3.4 6.9 2.7c9.7-2.8 11-11.2 11-11.2" fill="#ff8400"> </path> <g fill="#386f01"> <path d="M14.5 24.2l-2.6.9l-2.5-6.9l2.6-.9z"> </path> <path d="M20.3 26.8l-2.5-1.1l3.1-6.7l2.5 1.2z"> </path> <path d="M19 12.7c0 4.7-3.8 8.5-8.5 8.5S2 17.4 2 12.7s3.8-8.5 8.5-8.5c4.7.1 8.5 3.9 8.5 8.5"> </path> </g> <path d="M15.4 13c0 3.7-2.9 6.6-6.4 6.6c-3.6 0-6.4-3-6.4-6.6c0-3.7 2.9-6.6 6.4-6.6c3.5 0 6.4 3 6.4 6.6" fill="#fcfcfa"> </path> <path d="M14.6 13c0 2.5-2 4.6-4.4 4.6c-2.4 0-4.4-2-4.4-4.6c0-2.5 2-4.6 4.4-4.6c2.5.1 4.4 2.1 4.4 4.6" fill="#2c2e30"> </path> <g fill="#93603b"> <path d="M41.1 50.7c-1.9-2.9-3.3-6.2-4-9.6c-.7-3.5-.7-7.1.1-10.6c.8-3.5 2.5-6.9 5.3-9.3c1.4-1.2 3.1-2 4.9-2.3c1.8-.3 3.6 0 5.2.8c-1.7-.4-3.4-.4-5 .1s-2.9 1.4-4.1 2.5c-1.1 1.1-2.1 2.5-2.8 4c-.7 1.5-1.3 3-1.6 4.6c-.8 3.2-.9 6.6-.5 9.9c.5 3.4 1.3 6.7 2.5 9.9"> </path> <path d="M58.9 42.3c-.7.9-1.6 1.6-2.6 2.2c-1 .6-2.1 1-3.4 1.1c-1.2.1-2.5-.3-3.6-1S47.4 43 46.7 42c-1.4-2-1.9-4.7-1.6-7.1c.3-2.4 1.4-4.8 3.1-6.6c.9-.9 1.9-1.7 3.2-2.1c1.2-.5 2.6-.6 3.9-.2c1.4.4 2.5 1.4 3.1 2.5c.6 1.2.9 2.5.8 3.8c-.1 1.3-.5 2.6-1.5 3.5c-.9 1-2.5 1.5-3.8.8c-1.3-.7-1.9-2.1-1.6-3.4c.2-.7.6-1.2 1.2-1.5c.3-.1.7-.2 1 0c.3.1.5.3.7.6c-1-.9-2 .3-2.1 1.1c-.1.9.5 1.9 1.3 2.2c.4.2.8.1 1.3 0c.4-.1.8-.4 1.1-.7c.6-.7.9-1.7.9-2.7c0-1-.2-2-.7-2.8c-.5-.8-1.2-1.4-2.1-1.6c-1.8-.5-3.8.4-5.2 1.9c-2.8 2.9-3.7 7.9-1.6 11.5c1 1.8 2.7 3.3 4.8 3.4c2.1.1 4.3-1 6-2.3"> </path> </g> <path d="M34.3 12.7c0 5.4-4.4 9.7-9.8 9.7s-9.8-4.4-9.8-9.7c0-5.4 4.4-9.7 9.8-9.7s9.8 4.4 9.8 9.7" fill="#386f01"> </path> <ellipse cx="22.7" cy="13.1" rx="7.4" ry="7.6" fill="#fcfcfa"> </ellipse> <path d="M29.3 13.1c0 2.9-2.3 5.3-5.1 5.3s-5.1-2.4-5.1-5.3s2.3-5.3 5.1-5.3s5.1 2.4 5.1 5.3" fill="#2c2e30"> </path> </g></svg>
+        Snailmaster
+      </a>
+      <div class="d-xl-none icone" onclick="openmenu()">
+          <svg viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.5 11.75C6.08579 11.75 5.75 12.0858 5.75 12.5C5.75 12.9142 6.08579 13.25 6.5 13.25V11.75ZM18.5 13.25C18.9142 13.25 19.25 12.9142 19.25 12.5C19.25 12.0858 18.9142 11.75 18.5 11.75V13.25ZM6.5 15.75C6.08579 15.75 5.75 16.0858 5.75 16.5C5.75 16.9142 6.08579 17.25 6.5 17.25V15.75ZM18.5 17.25C18.9142 17.25 19.25 16.9142 19.25 16.5C19.25 16.0858 18.9142 15.75 18.5 15.75V17.25ZM6.5 7.75C6.08579 7.75 5.75 8.08579 5.75 8.5C5.75 8.91421 6.08579 9.25 6.5 9.25V7.75ZM18.5 9.25C18.9142 9.25 19.25 8.91421 19.25 8.5C19.25 8.08579 18.9142 7.75 18.5 7.75V9.25ZM6.5 13.25H18.5V11.75H6.5V13.25ZM6.5 17.25H18.5V15.75H6.5V17.25ZM6.5 9.25H18.5V7.75H6.5V9.25Z" fill="#069d1f"></path> </g></svg>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="guide.html">Guide complet</a></li>
+            <li><a href="demarrage-strategique.html">Elevage</a></li>
+            <li><a href="rentabilite-projection.html">Rentabilité</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li><a href="academie.html">Académie</a></li>
+        </ul>
+    </nav>
+    <a href="guide.html" class="animate-none"><button>Commencer gratuitement</button></a>
+    </div>
+    <div class="header-mobile">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="guide.html">Guide complet</a></li>
+            <li><a href="demarrage-strategique.html">Elevage</a></li>
+            <li><a href="rentabilite-projection.html">Rentabilité</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li><a href="academie.html">Académie</a></li>
+            <li><a href="guide.html" class="animate-none"><button class="w-100">Commencer gratuitement</button></a></li>
+        </ul>
+</div>
+</header>
+
+    <section class="barner">
+        <div class="overflow">
+            <div class="row">
+                <div class="col-8">
+                    <h1>Devenir un expert rentable
+                        en élevage d'escargots de terre
+                    </h1>
+                    <p>Le guide scientifique, pratique et 
+                        économique le plus complet jamais
+                        créer sur l'héliculture
+                    </p>
+                    <div class="btn">
+                       <a href="guide.html"> <button class="btn-start">Commencer le guide complet</button></a>
+                   <a href="guide.html#modules"> <button class="btn-preview">Voir les détails</button></a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="presentation">
+                    <ul>
+                        <li>+130 pages de contenu</li>
+                        <li>Simulateur de revenus</li>
+                        <li>Méthode terrain</li>
+                    </ul>
+                </div>
+                <div class="presentation-element">
+                    <div class="">
+                        <strong>Efficacité</strong>
+                        <span>Optimisation des cycles</span>
+                    </div>
+                    <div class="">
+                        <strong>Rentabilité</strong>
+                        <span>Projection financière réaliste</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+<section id="biodiversite" class="biodiversite">
+    <h2> Biodiversité & Espèces Principales</h2>
+    <div class="carousel-container">
+        <div class="but-control prev" onclick="prev()">
+
+            <svg viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13.4092 16.4199L10.3492 13.55C10.1935 13.4059 10.0692 13.2311 9.98425 13.0366C9.89929 12.8422 9.85547 12.6321 9.85547 12.4199C9.85547 12.2077 9.89929 11.9979 9.98425 11.8035C10.0692 11.609 10.1935 11.4342 10.3492 11.29L13.4092 8.41992" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M7 21.4202H17C19.2091 21.4202 21 19.6293 21 17.4202V7.42017C21 5.21103 19.2091 3.42017 17 3.42017H7C4.79086 3.42017 3 5.21103 3 7.42017V17.4202C3 19.6293 4.79086 21.4202 7 21.4202Z" stroke="transparent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </div>
+    <div class="carousel">
+    <div class="carousel-indicator">
+
+        <div class="card-grid">
+
+            <div class="card-biodiversite">
+                
+                <div class="card-image">
+                    <img src="./assets/image/Achatina achatina.webp" alt="Achatina achatina">
+                </div>
+
+                <div class="card-content">
+                    <h3>Achatina achatina</h3>
+                    <p class="card-description">
+                        Espèce géante d’Afrique de l’Ouest reconnue pour sa croissance rapide 
+                        et son excellent rendement en élevage intensif. Idéale pour un projet 
+                        orienté rentabilité et production commerciale.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="card-biodiversite">
+                <div class="card-image">
+                    <img src="./assets/image/Archachatina marginata.webp" alt="Archachatina marginata">
+                </div>
+
+                <div class="card-content">
+                    <h3>Archachatina marginata</h3>
+
+                    <p class="card-description">
+                        Espèce robuste à forte longévité, appréciée pour sa chair ferme 
+                        et sa résistance naturelle aux variations climatiques. 
+                        Très demandée sur les marchés locaux et gastronomiques.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="card-biodiversite">
+
+                <div class="card-image">
+                    <img src="./assets/image/helix-aspersa-maxima-producing-a-defensive-froth-of-mucus.webp" alt="Helix aspersa">
+                </div>
+
+                <div class="card-content">
+                    <h3>Helix aspersa</h3>
+
+                    <p class="card-description">
+                        Espèce européenne adaptée aux climats tempérés, 
+                        largement utilisée en production intensive contrôlée. 
+                        Idéale pour les élevages sous serre ou en environnement régulé.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+    <div class="but-control next" onclick="next()"><svg viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.5605 8.41992L13.6205 11.29C13.779 11.4326 13.9056 11.6068 13.9924 11.8015C14.0791 11.9962 14.1239 12.2068 14.1239 12.4199C14.1239 12.633 14.0791 12.8439 13.9924 13.0386C13.9056 13.2332 13.779 13.4075 13.6205 13.55L10.5605 16.4199" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17 3.41992H7C4.79086 3.41992 3 5.21078 3 7.41992V17.4199C3 19.6291 4.79086 21.4199 7 21.4199H17C19.2091 21.4199 21 19.6291 21 17.4199V7.41992C21 5.21078 19.2091 3.41992 17 3.41992Z" stroke="transparent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+    </div>
+    <div class="btn">
+
+        <a class="card-btn" href="snails.html">Voir toutes les espèces</a>
+    </div>
+</section>
+
+    <section class="intro container">
+    <div class="intro-parent">
+
+        <div class="intro-enfant a">
+            <h1>Pourquoi choisir notre plateforme ?</h1>
+
+            <div class="content-grid">
+                <div class="card market-card">
+                    <div class="card-icon">
+                        📊
+                    </div>
+                    <h3>Rentabilité prouvée</h3>
+                    <p>Modèles économiques validés sur le terrain avec projections financières réalistes.</p>
+                </div>
+
+                <div class="card market-card">
+                    <div class="card-icon">
+                        🔬
+                    </div>
+                    <h3>Données scientifiques</h3>
+                    <p>Recommandations basées sur la biologie, la croissance et le comportement naturel des escargots.</p>
+                </div>
+
+                <div class="card market-card">
+                    <div class="card-icon">
+                        🎓
+                    </div>
+                    <h3>Accessible à tous</h3>
+                    <p>Du débutant au professionnel souhaitant structurer un élevage à grande échelle.</p>
+                </div>
+            </div>
+
+        </div>
+      
+
+        <div class="intro-enfant">
+            <h2 class="sub-title">
+                Une approche stratégique orientée performance
+            </h2>
+            <div class="credibility">
+            
+            <div class="credibility-section">
+                <div class="credibility-item">
+                    ✔ Accompagnement du démarrage à la mise à l’échelle
+                </div>
+                <div class="credibility-item">
+                    ✔ Outils concrets et opérationnels
+                </div>
+                <div class="credibility-item">
+                    ✔ Méthodologie structurée
+                </div>
+            </div>
+
+            <div class="credibility-section">
+                <div class="credibility-item">
+                    ✔ Vision business intégrée
+                </div>
+                <div class="credibility-item">
+                    ✔ Optimisation des coûts
+                </div>
+                <div class="credibility-item">
+                    ✔ Maximisation du rendement
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+      <div class="flex mobile">
+            <!-- <div class="element">
+                <img src="./assets/image/Snail-Farming-Guide-Thumbnail.webp" alt="Elevage d'escargots">
+            </div> -->
+            <div class="element b">
+
+    <h2>Transformez votre élevage en véritable entreprise agricole performante</h2>
+
+    <p>
+        Passez d’une production approximative à une gestion maîtrisée, structurée 
+        et orientée résultats. Chaque décision devient stratégique, chaque action 
+        contribue directement à votre rentabilité.
+    </p>
+
+    <p>
+        Notre approche combine méthode, rigueur technique et vision économique 
+        pour faire de l’héliciculture une activité stable, prévisible et évolutive.
+    </p>
+
+    <ul>
+        <li>✔ Organisation claire et plan d’action précis</li>
+        <li>✔ Réduction des pertes et optimisation des ressources</li>
+        <li>✔ Augmentation progressive du rendement</li>
+        <li>✔ Structuration adaptée aux petites comme aux grandes exploitations</li>
+    </ul>
+
+    <p>
+        Vous ne lancez pas simplement un élevage.  
+        Vous construisez un système productif durable, capable de générer des revenus réguliers.
+    </p>
+
+</div>
+        </div>
+</section>
+
+<section class="band">
+    <div class="band-container">
+        <div class="band-content">
+            <h1 class="band-title">
+                Lancez dès maintenant votre élevage rentable
+            </h1>
+            <p class="band-subtitle">
+                Accédez aux méthodes éprouvées, aux outils financiers et aux stratégies de production optimisées.
+            </p>
+        </div>
+
+        <div class="band-action">
+            <a href="./guide.html">
+                <button class="band-btn">
+                    Accéder au guide complet
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="content-overview">
+    <div class="container">
+        <h2 class="section-title">Modules stratégiques disponibles</h2>
+
+        <div class="content-grid">
+
+            <div class="card">
+                <div class="card-icon">🐌</div>
+                <h3>Démarrage stratégique</h3>
+                <p>Planification, installation et structuration d’un élevage performant.</p>
+                <a href="demarrage-strategique.html">
+                    <button class="card-btn">Explorer</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🥬</div>
+                <h3>Nutrition optimisée</h3>
+                <p>Formulation alimentaire, stockage et gestion des ressources végétales.</p>
+                <a href="nutrition-scientifique.html">
+                    <button class="card-btn">Explorer</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🥚</div>
+                <h3>Reproduction & cycles</h3>
+                <p>Maîtrise des périodes de ponte et gestion des incubations.</p>
+                <a href="reproduction-cycles.html">
+                    <button class="card-btn">Explorer</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🩺</div>
+                <h3>Prévention & santé</h3>
+                <p>Réduction de la mortalité et contrôle sanitaire rigoureux.</p>
+                <a href="maladies-prevention.html">
+                    <button class="card-btn">Explorer</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📈</div>
+                <h3>Rentabilité & projections</h3>
+                <p>Simulation des coûts, marges et scénarios de croissance.</p>
+                <a href="rentabilite.html">
+                    <button class="card-btn">Explorer</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💼</div>
+                <h3>Stratégie commerciale</h3>
+                <p>Positionnement marché, négociation et distribution.</p>
+                <a href="vente-strategie-marche.html">
+                    <button class="card-btn">Explorer</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🌿</div>
+                <h3>Biodiversité & classification</h3>
+                <p>Espèces adaptées, entretien annuel et gestion comportementale.</p>
+                <a href="biodiversite-classification.html">
+                    <button class="card-btn">Explorer</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📅</div>
+                <h3>Calendrier annuel</h3>
+                <p>Organisation mensuelle, hebdomadaire et quotidienne pour une production maîtrisée.</p>
+                <a href="calendrier-elevage.html">
+                    <button class="card-btn">Explorer</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<footer class="main-footer">
+    <div class="footer-container">
+
+        <div class="footer-logo">
+            <h3>Snailmaster</h3>
+            <p>Plateforme mondiale d’héliciculture</p>
+        </div>
+
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="guide.html">Guide complet</a></li>
+                <li><a href="demarrage-strategique.html">Elevage</a></li>
+                <li><a href="rentabilite.html">Rentabilité</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+                <li><a href="academie.html">Académie</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-legal">
+            <p>Mentions légales</p>
+            <p>Politique de confidentialité</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Plateforme mondiale d’héliciculture
+    </div>
+</footer>
+  <script>
+    const navbar=document.querySelector('.navbar');
+    window.addEventListener('scroll',()=>{
+      if(window.scrollY>50){
+        navbar.classList.add('scrolled');
+      }else{
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/nav.js"></script>
+</body>
+</html>

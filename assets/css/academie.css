@@ -1,0 +1,56 @@
+:root {
+    --green-primary: #1F6B4E;
+    --green-light: #EDF6F2;
+    --green-accent: #7BC8A4;
+    --orange-cta: #E28F2D;
+    --text-dark: #1E1E1E;
+    --text-gray: #4A4A4A;
+    --neutral-bg: #F8FBF9;
+    --white: #FFFFFF;
+}
+.hero-nutrition{
+    background: url("../image/banner-academie.jfif");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70vh;
+    position: relative;
+}
+.premium{
+    background: rgb(9, 104, 29);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    text-align: center;
+    color: white;
+    gap: 10px;
+}
+.premium h3{
+    font-size: 35px;
+    color: burlywood;
+}
+.premium a{
+    padding: 20px;
+}
+.premium li{
+    list-style: none;
+}
+.growth-factor,.error-factor{
+    max-height: 100% !important;
+    overflow: none !important;
+    scrollbar-color: transparent transparent;
+}
+@media (max-width:768px) {
+    td,table,th{
+        margin: 0;
+        padding: 5px;
+    }
+    .table{
+        overflow: auto;
+        width: 100%;
+        scrollbar-color: rgba(255, 253, 253, 0.514) transparent;
+        margin: 90px auto;
+    }
+}

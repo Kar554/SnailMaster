@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green-primary: #1F6B4E;
+    --green-light: #EDF6F2;
+    --green-accent: #7BC8A4;
+    --orange-cta: #E28F2D;
+    --text-dark: #1E1E1E;
+    --text-gray: #4A4A4A;
+    --neutral-bg: #F8FBF9;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.8s;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo .icone svg{
+    width: 50px;
+}
+.header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+header{
+
+    z-index: 1000;
+    padding: 10px 0;
+    background: white;
+    /* padding: 20px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header-mobile{
+    display: none;
+    background: #EDF6F2;
+    margin: 0;
+    padding: 0;
+}
+.header-mobile ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+.header-mobile li{
+    padding: 20px 0;
+    width: 100%;
+}
+
+header .animate-none:hover::after{
+    width: 0;
+}
+header .logo{
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--nature);
+}
+.logo a{
+    text-decoration: none;
+}
+    header li {
+        cursor: pointer;
+      position: relative;
+      font-weight: 500;
+      color: #333!important;
+      transition: color .3s ease;
+    }
+    header li::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-5px;
+      width:0%;
+      height:2px;
+      background: var(--orange-cta);
+      transition: width .3s ease;
+    }
+    header li:hover {
+      color: var(--orange-cta)!important;
+    }
+    header li:hover::after {
+      width:100%;
+    }
+.logo svg{
+    width: 30px;
+    color: var(--nature);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+header button{
+    padding: 10px;
+    width: 250px;
+    color: white;
+    background: chocolate;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.error-factor,.growth-factor{
+    overflow-y:hidden;
+    overflow-x: visible;
+}
+
+@media (max-width:1200px) {
+    header nav{
+        display: none;
+    }
+    header button{
+    display: none;
+}
+.header-mobile button{
+    display: block;
+}
+
+}
+@media (min-width:1201px) {
+    .d-xl-none{
+        display: none;
+    }
+}
+@media (max-width:768px) {
+    .container,.section,section{
+    background: white;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    text-align: center;
+}
+}

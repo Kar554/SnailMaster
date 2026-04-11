@@ -1,0 +1,118 @@
+:root {
+    --green-primary: #1F6B4E;
+    --green-light: #EDF6F2;
+    --green-accent: #7BC8A4;
+    --orange-cta: #E28F2D;
+    --text-dark: #1E1E1E;
+    --text-gray: #4A4A4A;
+    --neutral-bg: #F8FBF9;
+    --white: #FFFFFF;
+}
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--white);
+    color: var(--text-gray);
+    line-height: 1.6;
+    padding-top: 100px;
+}
+
+.hero-nutrition{
+    background: url("../image/banner-ressource.jfif");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70vh;
+    position: relative;
+}
+.overflow{
+    width: 100%;
+    padding:0 50px;
+    height: 100%;
+    position: absolute; 
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(70deg,rgba(255, 255, 255, 0.192),rgb(4, 88, 4)) ;
+}
+.hero-content{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero-title{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 5px gray;
+    background: rgba(0, 0, 0, 0.575);
+}
+.hero-title h1{
+    color: rgb(11, 255, 72);
+}
+.btn-primary{
+    background: var(--orange-cta);
+    border: none;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    min-width: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--orange-cta);
+}
+.btn{
+    margin: 50px 0;
+    text-align: center;
+}
+.btn-outline{
+    border:1px solid var(--green-primary);
+    border-radius: 20px;
+    background: transparent;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px;
+    color: #1F6B4E;
+    
+}
+.btn-outline:hover{
+    background: var(--green-primary);
+    border: none;
+    color: var(--white);
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.growth-factor,.error-factor{
+    max-height: 100% !important;
+    overflow: none !important;
+    scrollbar-color: transparent transparent;
+}
+@media (max-width:768px) {
+    header nav{
+        display: none;
+    }
+    .card img{
+        display: none;
+    }
+    td,table,th{
+        margin: 0;
+        padding: 5px;
+    }
+    .table{
+        overflow: auto;
+        width: 100%;
+        scrollbar-color: rgba(255, 253, 253, 0.514) transparent;
+        margin: 90px auto;
+    }
+}
