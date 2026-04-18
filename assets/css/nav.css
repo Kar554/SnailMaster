@@ -153,4 +153,7 @@ header button{
     width: 100%;
     text-align: center;
 }
+.contain{
+        padding: 20px !important;
+    }
 }
