@@ -26,6 +26,9 @@
     justify-content: center;
     align-items: center;
 }
+.logo a{
+    color: black;
+}
 .logo .icone svg{
     width: 50px;
 }
@@ -50,23 +53,38 @@ header{
     display: none;
     background: #EDF6F2;
     margin: 0;
+    height: 70vh;
     padding: 0;
 }
 .header-mobile ul{
     list-style: none;
     display: flex;
+    width: 100%;
     flex-direction: column;
     margin-top: 30px;
+    overflow: auto;
+    overflow-X: hidden;
     gap: 15px;
     margin: 0;
     padding: 0;
 }
 .header-mobile li{
-    padding: 20px 0;
     width: 100%;
+    position: relative;
+    padding: 20px 10px;
 }
-
-header .animate-none:hover::after{
+.header-mobile li a{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.header-mobile .active{
+    background: #7bc8a456;
+}
+header .animate-none:hover::after,.b-none:hover::after{
     width: 0;
 }
 header .logo{
@@ -88,11 +106,11 @@ header .logo{
     header li::after{
       content:"";
       position:absolute;
-      left:0;
-      bottom:-5px;
+      left:10px;
+      bottom:-20px;
       width:0%;
       height:2px;
-      background: var(--orange-cta);
+      background: var(--green-accent);
       transition: width .3s ease;
     }
     header li:hover {
@@ -138,7 +156,6 @@ header button{
 .header-mobile button{
     display: block;
 }
-
 }
 @media (min-width:1201px) {
     .d-xl-none{

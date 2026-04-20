@@ -223,7 +223,7 @@ button:hover::after{
     margin: 5px 0;
 }
 .content-overview{
-    background: #EDF6F2;
+    background: rgb(240, 240, 229);
     padding: 100px 30px;
 }
 .section-title{
@@ -276,12 +276,16 @@ button:hover::after{
     width: 200px;
     border-radius: 7px;
     margin-top: 20px;
-    background: #1F6B4E;
-    color: white;
+    background: white;
+    border:1px solid var(--green-accent);
+    color: var(--green-accent);
+    
 }
 .card-btn:hover{
+    color: white;
     background: #174C38;
 }
+
 /* section timelime */
 .timeline{
     margin: 30px 0;
@@ -296,6 +300,7 @@ button:hover::after{
     justify-content: center;
     align-self: center;
     flex-direction: column;
+    border: 1px solid rgba(128, 128, 128, 0.24);
     text-align: center;
     background: white;
     width: 100%;
@@ -427,6 +432,21 @@ button:hover::after{
     .hero-left,.hero-right{
         width: 100%;
     }
+    .modules-grid{
+        /* background: red; */
+        background: rgb(240, 240, 229);
+        padding: 20px;
+        gap: 20px;
+    }
+    .module-flex,.module-card{
+        line-height: 1.3;
+    }
+    .module-card{
+        padding: 15px !important;
+    }
+    .business{
+        padding: 1px 10px !important;
+    }
      .footer-container {
         flex-direction: column;
         gap: 30px;
@@ -444,6 +464,9 @@ button:hover::after{
     }
 }
 @media (max-width:650px) {
+    .modules-grid{
+        display: none;
+    }
       button{
         width: 150px;
     }
@@ -453,6 +476,10 @@ button:hover::after{
     .timeline{
         flex-direction: column;
         gap: 60px;
+    }
+    .timeline-step{
+        padding: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.315);
     }
      header{
         gap: 10px;

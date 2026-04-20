@@ -368,6 +368,7 @@ svg{
 }
 .card-btn:hover{
     color: white;
+    border: none;
     background: #174C38;
 }
 
