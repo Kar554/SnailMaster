@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 body{
-    padding-top: 100px;
+    padding-top: 90px;
     font-family: 'Inter', sans-serif;
 }
 button{
@@ -234,7 +234,7 @@ svg{
     font-size: 28px;
     color: var(--green-accent);
     margin: 20px 0;
-    line-height: 1.5em;
+    line-height: 1.5em !important;
 }
 .element.b p{
     font-size: 16px;
@@ -254,7 +254,7 @@ svg{
     border-left: 3px solid var(--green-primary);
     background: var(--green-light);
     text-align: left;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 .element.b li:hover{
     transform: translateX(4px);
@@ -361,7 +361,7 @@ svg{
     width: 200px;
     border-radius: 7px;
     margin-top: 20px;
-    background: white;
+    background: transparent;
     border:1px solid var(--green-accent);
     color: var(--green-accent);
     
@@ -457,11 +457,21 @@ svg{
 .btn-main:hover,.infra-card:hover,.market-card:hover{
     transform: translateY(-15px);
 }
-
+.c-red{
+    color: red;
+}
+.c-orange{
+    color: rgb(189, 124, 4);
+}
+.c-green{
+    color: green;
+}
 @media (max-width: 968px) {
+
     .content-preview,.content-grid{
         grid-template-columns: repeat(2,1fr);
     }
+ 
     .footer-container {
         flex-direction: column;
         gap: 30px;
@@ -488,13 +498,18 @@ svg{
         width: 100%;
     }
     .but-control{
-        padding: 5px;
+        padding: 10px;
     }
     .but-control svg{
         width: 30px;
     }
     .content-preview,.content-grid{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (min-width:1000px) {
+    .mobile-center{
+        text-align: center;
     }
 }
 @media (max-width:1400px) {
@@ -585,18 +600,29 @@ svg{
     .footer-logo p {
         max-width: 100%;
     }
+    .row{
+        padding: 10px;
+    }
+    .btn button{
+        width: 100%;
+    }
 }
 @media (max-width:476px) {
 
-    .presentation-element{
-        flex-direction: column;
-    }
     .intro-enfant{
         display: none;
     }
     .element.b{
         margin: 0;
         width: 100%;
+    }
+    .none-mobile{
+        display: none;
+    }
+    .presentation-element div{
+        min-height: 20px;
+        padding: 5px;
+        height:80px;
     }
     .element.b h2{
         font-size: 18px;
@@ -609,6 +635,15 @@ svg{
     ul,li{
         margin-left: 0 !important;
         padding: 0;
+    }
+    h1{
+        font-size: 25px !important;
+    }
+    h2{
+        font-size: 20px !important;
+    }
+    h3{
+        font-size: 15px !important;
     }
     .carousel{
         width: 200px;

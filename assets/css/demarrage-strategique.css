@@ -75,7 +75,7 @@ button{
 }
 .hero-actions{
     display: flex;
-    margin: 20px 0;
+    margin: 40px 0;
     gap: 5px;
 }
 .btn-main{
@@ -161,6 +161,7 @@ button{
 .market-card{
     width: 100%;
     background: var(--green-light);
+    border: 1px solid rgba(128, 128, 128, 0.226);
     padding: 20px;
     min-height: 100px;
     border-radius: 10px;
@@ -172,6 +173,7 @@ section{
 .market-card-white{
     background: white;
     width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.226);
     padding: 20px;
     min-height: 100px;
     border-radius: 10px;
@@ -222,33 +224,15 @@ tr.active{
     background: var(--green-light);
     padding: 20px;
     min-height: 100px;
+    border: 1px solid rgba(128, 128, 128, 0.226);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.075);
 }
 
-.error{
-    margin: 40px 0;
-    min-height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.error-list{
-    list-style: none;
-    line-height: 2.4rem;
-    font-size: 25px;
-}
-.error-list li{
-    position: relative;
-    padding-left: 80px;
-}
-.error-list li::before{
-      content: "✖";
-    position: absolute;
-    left: 0;
-    color: red;
-}
 
+.text-center{
+    text-align: center;
+}
 .cta-final{
     background: linear-gradient(90deg,var(--green-primary),var(--green-accent));
     padding: 30px;
@@ -259,6 +243,26 @@ tr.active{
     justify-content: center;
     text-align: center;
     margin: 200px 0;
+}
+    .error-card{
+        background: rgba(197, 26, 26, 0.055) !important;
+    }
+.error-card{
+    background: white;
+    padding: 20px;
+    border-left: 10px solid red;
+}
+.error-card li{
+    padding: 15px;
+    margin: 20px 0;
+    list-style: none;
+    background: rgba(255, 0, 0, 0.13);
+    border-left: 5px solid red;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.error-card li:hover{
+    transform: translateX(-5px);
 }
 .cta-final h2{
     color: white;
@@ -344,6 +348,44 @@ tr.active{
     .hero-grid{
         flex-direction: column;
     }
+    .hero-demarrage{
+        padding-top: 60px !important;
+    }
+    .container-mb{
+        width: 100%;
+    }
+    .hero-content{
+        background: linear-gradient(#0001,#1F6B4E),
+        url("../image/banner_demarrage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        padding: 20px;
+        position: relative;
+    }
+    .hero-content .btn-outline{
+        border: 1px solid white;
+        color: white;
+    }
+    .hero-content .btn-outline:hover{
+        border: 1px solid white;
+        background: white;
+        color: black;
+    }
+    .hero-content h1{
+        color: white;
+    }
+    .hero-content p{
+        color: rgba(255, 255, 255, 0.829);
+    }
+    .hero-kpi{
+        position: absolute;
+        width: 90%;
+        bottom: -90px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .hero-left,.hero-right{
         width: 100%;
     }
@@ -375,6 +417,11 @@ tr.active{
     .hero-kpi{
         justify-content: center;
     }
+    .cta-final{
+        margin: 20px 0 !important;
+        padding: 0 !important;
+        min-height: 200px;
+    }
     .kpi-item{
         width: 100%;
     }
@@ -392,14 +439,17 @@ tr.active{
         margin: 0;
         width: 100%;
     }
+    .hero-kpi{
+        bottom: -70px;
+    }
     .logo{
         display: flex;
         font-size: 15px !important;
         gap: 10px;
     }
-    .hero-kpi{
-        width: 100%;
-        flex-direction: column;
+    .kpi-item{
+        padding: 10px;
+        min-height: 20px;
     }
     .table{
         width: 100%;

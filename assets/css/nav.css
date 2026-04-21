@@ -107,7 +107,7 @@ header .logo{
       content:"";
       position:absolute;
       left:10px;
-      bottom:-20px;
+      bottom:-10px;
       width:0%;
       height:2px;
       background: var(--green-accent);
@@ -118,6 +118,9 @@ header .logo{
     }
     header li:hover::after {
       width:100%;
+    }
+    .header-mobile li::after{
+        bottom:-20px;
     }
 .logo svg{
     width: 30px;
