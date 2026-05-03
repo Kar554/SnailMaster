@@ -8,6 +8,14 @@
     --neutral-bg: #F8FBF9;
     --white: #FFFFFF;
 }
+body{
+    background: rgba(0, 128, 0, 0.199);
+}
+.rev{
+    background: var(--neutral-bg) !important;
+    padding: 60px 20px !important;
+    border-radius: 0;
+}
 .container{
     padding: 0;
     margin: 0 auto;
@@ -55,8 +63,115 @@ table{
 .warning{
     text-align: center;
 }
+#simulation{
+    background: var(--neutral-bg);
+    border-radius: 7px;
+    margin: 200px 60px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.simulation-element{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.simulation-element svg{
+    width: 100px;
+}
+.simulation-element .card{
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    box-shadow: none;
+}
+.overlay-simulation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%) translateY(-50%);
+}
+.overlay-simulation button{
+    color: white;
+    background: rgb(0, 174, 255);
+}
+.overlay-background{
+    background: linear-gradient(transparent,rgba(11, 216, 216, 0.671));
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay-revenu{
+    background: linear-gradient(transparent,rgba(0, 0, 0, 0.637));
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+.simulation-grid{
+    display: flex;
+    gap: 20px;
+    margin: 90px 0;
+    align-items: center;
+}
+.simulation-element.b{
+    overflow: hidden;
+    width: 70%;
+    position: relative;
+    height: 100%;
+}
+.simulation-grid img{
+    width: 100%;
+    height: 100%;
+}
+.revenu{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+.rev{
+    background: transparent;
+    box-shadow: none;
+
+}
+.element-background{
+    background: linear-gradient(transparent,rgba(0, 0, 0, 0.459)), url(../image/main-oeuvre.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+.revenu-element{
+    width: 100%;
+    margin: 300px 0;
+    position: relative;
+}
+
+.revenu-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+}
+.revenu-element .error-factor{
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    box-shadow: none;
+    border-radius: 7px;
+    text-align: left;
+}
+.revenu-element .error-factor h3{
+    text-align: center;
+    margin: 30px 0;
+}
+.error-factor strong{
+    color: var(--orange-cta);
+}
 .error-grid{
     justify-content: center;
+    grid-template-columns: repeat(2,1fr);
 }
 .carrousel{
     overflow: hidden;
@@ -64,6 +179,10 @@ table{
 }
 .carrou{
     width: 100%;
+}
+.contain{
+    padding:0 20px;
+    margin: 100px 0;
 }
 .icon{
     display: flex;
@@ -86,8 +205,100 @@ ul li::after,ul li::before{
     content: "";
     display: none;
 }
+.growth{
+    display: none;
+    margin-top: 100px;
+}
+.growth-elem img{
+    width: 500px;
+}
+.growth-elem{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 30px;
+    
+}
+.growth-grid{
+    width: 100%;
+}
+.cta .btn-outline{
+    border: 1px solid white;
+    color: white;
+}
+.cta .btn-outline:hover{
+    background: white;
+    color: black;
+}
+@media (max-width:476px) {
+    .element-background{
+        height: 100px !important;
+        border-radius: 0;
+    }
+}
 @media (max-width:768px) {
+    .error-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
    button{
     width: 100%;
    }
+   .rev{
+    background: var(--neutral-bg) !important;
+    padding: 60px 10px !important;
+    border-radius: 0;
+}
+.element-background{
+    height: 400px !important;
+}
+.cta{
+    padding: 20px !important;
+}
+}
+@media (max-width:1400px) {
+  
+    .revenu{
+        flex-direction: column;
+    }
+    .revenu-element{
+        margin: 20px 0;
+    }
+    .element-background{
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(128, 128, 128, 0.562);
+        width: 100%;
+        background-size: cover;
+        height: 600px;
+    }
+}
+@media (max-width:1200px) {
+    .revenu-element .error-factor{
+        padding: 0;
+        margin: 0;
+    }
+    .error-factor ul{
+
+        margin: 0;
+        padding: 0;
+    }
+      .simulation-grid{
+        flex-direction: column-reverse;
+    }
+    .simulation-element img{
+        border-radius: 7px;
+    }
+    .simulation-element.b{
+        width: 100%;
+    }
+    #simulation{
+        margin: 20px;
+    }
+}
+/* @media (max-width:992px) {
+  
+} */
+@media (min-width:2100px){
+    .simulation-grid{
+        align-items: flex-start;
+    }
 }

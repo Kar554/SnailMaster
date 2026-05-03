@@ -11,7 +11,9 @@ body{
 .container{
     padding:0 30px;
 }
-
+.contain{
+    padding: 0 20px !important;
+}
 .hero-grid{
     display: flex;
     align-items: center;
@@ -494,3 +496,4 @@ button:hover::after{
         grid-template-columns: repeat(1,1fr);
     }
 }
+
