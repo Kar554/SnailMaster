@@ -134,10 +134,9 @@ table{
 .rev{
     background: transparent;
     box-shadow: none;
-
 }
 .element-background{
-    background: linear-gradient(transparent,rgba(0, 0, 0, 0.459)), url(../image/main-oeuvre.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.459)), url(../image/main-oeuvre.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -231,9 +230,23 @@ ul li::after,ul li::before{
     color: black;
 }
 @media (max-width:476px) {
+    .mobile-none{
+        display: none;
+    }
     .element-background{
         height: 100px !important;
-        border-radius: 0;
+        border-radius: 0 !important;
+        box-shadow: none;
+    }
+    .simulation-grid img{
+        height: 300px !important;
+    }
+
+    .simulation-element{
+        text-align: left;
+    }
+    .simulation-element svg{
+        width: 60px;
     }
 }
 @media (max-width:768px) {
@@ -255,6 +268,7 @@ ul li::after,ul li::before{
     padding: 20px !important;
 }
 }
+
 @media (max-width:1400px) {
   
     .revenu{
