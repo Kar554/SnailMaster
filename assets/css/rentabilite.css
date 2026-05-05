@@ -8,6 +8,9 @@
     --neutral-bg: #F8FBF9;
     --white: #FFFFFF;
 }
+*{
+    transition: all 0.8S !important;
+}
 body{
     background: rgba(0, 128, 0, 0.199);
 }
@@ -230,6 +233,18 @@ ul li::after,ul li::before{
     color: black;
 }
 @media (max-width:476px) {
+    .btn-simulation,.overlay-simulation button{
+        width: 90%;
+        min-width: 250px;
+    }
+    .flex-simulation{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .card h3{
+        text-align: center;
+    }
+
     .mobile-none{
         display: none;
     }
@@ -245,9 +260,9 @@ ul li::after,ul li::before{
     .simulation-element{
         text-align: left;
     }
-    .simulation-element svg{
+    /* .simulation-element svg{
         width: 60px;
-    }
+    } */
 }
 @media (max-width:768px) {
     .error-grid{
